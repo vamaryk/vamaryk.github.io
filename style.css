@@ -45,13 +45,13 @@ body.dark-theme a:hover {
 }
 
 @media (max-width: 920px) {
-  body {
-    padding: 3rem;
-  }
-  
-  .btn-toggle{
-  margin-top: -25px;
-  }
+    body {
+      padding: 3rem;
+    }
+    
+    .btn-toggle{
+      margin-top: -25px;
+    }
 }
 
 header {
@@ -139,9 +139,9 @@ a:hover {
 }
 
 @media (max-width: 920px) {
-  .grid {
-    grid-gap: 3rem;
-  }
+    .grid {
+      grid-gap: 3rem;
+    }
 }
 
 .grid__item {
@@ -362,115 +362,116 @@ footer{
 }
 
 @media (max-width: 800px) {
-  .grid {
-    grid-gap: 2em; /* уменьшение расстояния между элементами */
-  }
+    .grid {
+      grid-gap: 2em; /* уменьшение расстояния между элементами */
+    }
+    
+    .grid__item:hover {
+      transform: translateY(-0.5%);
+      box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+    }
+    
+    .card__img {
+      height: 15rem;
+    }
+    
+    .btn-toggle{
+    margin-top: -25px;
+    }
+    
+    .lnk {
+      font-size: 1.4em;
+      margin-right: 4em;
+      margin-left: -10em;
+      color: #fff;
+    }
   
-  .grid__item:hover {
-    transform: translateY(-0.5%);
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
-  }
+    .card__header {
+      font-size: 2em; 
+    }
+    
+    .grid_n {
+      display: flex;
+      grid-gap: 3em; 
+      flex-wrap:wrap;
+    }
   
-  .card__img {
-    height: 15rem;
-  }
-  
-  .btn-toggle{
-  margin-top: -25px;
-  }
-  
-  .lnk {
-    font-size: 1.4em;
-    margin-right: 4em;
-    margin-left: -10em;
-    color: #fff;
-  }
-
-  .card__header {
-    font-size: 2em; 
-  }
-  
-  .grid_n {
-    display: flex;
-    grid-gap: 3em; 
-    flex-wrap:wrap;
-  }
-
-  .card__img_n  {
-    height: auto;
-    margin: 0 auto;
-    object-fit: cover;
-    object-position: center top;
-    margin-bottom: -45%;
-    margin-top: -35%;
-  }
-  
-  .chn {
-    color: #fff;
-  }
-  
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    object-fit: cover;
-  }
+    .card__img_n  {
+      height: auto;
+      margin: 0 auto;
+      object-fit: cover;
+      object-position: center top;
+      margin-bottom: -45%;
+      margin-top: -35%;
+    }
+    
+    .chn {
+      color: #fff;
+    }
+    
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      object-fit: cover;
+    }
 }
 
 @media (max-width: 520px) {
-   body {
-    padding: 2rem;
-  }
-  
-  .grid_n {
-    display: flex;
-    grid-template-columns: 1fr; /* изменение количества колонок на мобильных устройствах */
-    grid-gap: 2em;
-    flex-wrap: wrap;
-    margin-top:10em;
-  }
-  
-/*   #m_c_h{
-      font-size: 1.2em;
-    } */
-  
-  .btn-toggle{
-    margin-top: -45px;
-    z-index: 0;
-  }
-  
-  .lnk {
-    font-size: 1.25em;
-    margin-right: 1em;
-    margin-left: -4em;
-  }
-  
-  .card__header_n {
-    font-size: 2em;
-  }
-  
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    object-fit: cover;
+     body {
+      padding: 2rem;
+    }
     
-  }
+    .grid_n {
+      display: flex;
+      grid-template-columns: 1fr; /* изменение количества колонок на мобильных устройствах */
+      grid-gap: 2em;
+      flex-wrap: wrap;
+      margin-top:10em;
+    }
+    
+  /*   #m_c_h{
+        font-size: 1.2em;
+      } */
+    
+    .btn-toggle{
+      margin-top: -45px;
+      z-index: 0;
+    }
+    
+    .lnk {
+      font-size: 1.25em;
+      margin-right: 1em;
+      margin-left: -4em;
+    }
+    
+    .card__header_n {
+      font-size: 2em;
+    }
+    
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      object-fit: cover;
+      
+    }
+    
+     #desc {
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+    }
+    
+     table {
+      width: 100%;
+      font-size: 1.2em;
+    }
   
-   #desc {
-    margin-right: 0.5em;
-    margin-left: 0.5em;
-  }
-  
-   table {
-    width: 100%;
-    font-size: 1.2em;
-  }
-
-  th, td {
-    padding: 6px; /* уменьшение отступов в ячейках таблицы */
-  }
+    th, td {
+      padding: 6px; /* уменьшение отступов в ячейках таблицы */
+    }
 }
+
 @media (max-width: 440px) {
   .lnk {
     font-size: 1.1em;
