@@ -214,23 +214,23 @@ a:hover {
 }
 
 .horizontal-nav {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-    margin-left: -40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-left: -40px;
 }
 
 .horizontal-nav ul {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .horizontal-nav li {
-    margin: 0 40px; /* Отступы между элементами */
+  margin: 0 40px; /* Отступы между элементами */
 }
 
 .horizontal-nav li:nth-child(n) {
-    white-space: nowrap; /* Запрет переноса текста на новую строку */
+  white-space: nowrap; /* Запрет переноса текста на новую строку */
 }
 .card__img_car {
   display: block;
@@ -271,20 +271,20 @@ a:hover {
 }
   
 .images {
-    display: flex;
-    justify-content: center; 
-    max-width: 100%; 
+  display: flex;
+  justify-content: center; 
+  max-width: 100%; 
 }
 
 .images a {
-    width: 8%; 
-    margin: 0  auto; 
-    margin-top: 8px;
+  width: 8%; 
+  margin: 0  auto; 
+  margin-top: 8px;
    
 }
 
 .images img {
-    width: 100%; 
+  width: 100%; 
 }
 
 #desc{
@@ -340,7 +340,7 @@ tr:last-of-type td:last-of-type {
 }
 
 th {
-    background-color: #F3FCFF;
+  background-color: #F3FCFF;
 }
 
 footer{
@@ -348,35 +348,33 @@ footer{
 }
 
 .swiper-slide img {
-   display: block;
-   width: 60em;
-   height: auto;
-   margin: 0 auto;
-   object-fit: cover;
-   border-radius: 1rem;
+  display: block;
+  width: 60em;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 #m_c_h{
-    margin-bottom: 0.5em;
-    margin-top: 1.1em;
+  margin-bottom: 0.5em;
+  margin-top: 1.1em;
 }
 
 @media (max-width: 800px) {
   .grid {
     grid-gap: 2em; /* уменьшение расстояния между элементами */
   }
-.grid__item:hover {
-  transform: translateY(-0.5%);
-  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
-}
+  .grid__item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+  }
   .card__img {
     height: 15rem;
   }
   .btn-toggle{
   margin-top: -25px;
   }
-  .modal-content {
-    width: 35em;
-}
+  
   .lnk {
     font-size: 1.4em;
     margin-right: 4em;
@@ -389,7 +387,6 @@ footer{
   }
      .grid_n {
     display: flex;
-    
     grid-gap: 3em; 
     flex-wrap:wrap;
   }
@@ -410,7 +407,7 @@ footer{
    height: auto;
    margin: 0 auto;
    object-fit: cover;
-}
+  }
 }
 
 @media (max-width: 520px) {
@@ -426,8 +423,8 @@ footer{
   }
   
 /*   #m_c_h{
-    font-size: 1.2em;
-} */
+      font-size: 1.2em;
+    } */
   
   .btn-toggle{
     margin-top: -45px;
@@ -449,7 +446,7 @@ footer{
    margin: 0 auto;
    object-fit: cover;
     
-}
+  }
    #desc {
     margin-right: 0.5em;
     margin-left: 0.5em;
@@ -479,10 +476,10 @@ footer{
   }
   .horizontal-nav li {
     margin: 0 20px;
-}
+  }
   table {
     display: none;
- }
+  }
 }
 
 footer {
