@@ -385,7 +385,7 @@ footer{
   .card__header {
     font-size: 2em; 
   }
-     .grid_n {
+  .grid_n {
     display: flex;
     grid-gap: 3em; 
     flex-wrap:wrap;
@@ -403,10 +403,10 @@ footer{
     color: #fff;
   }
   .swiper-slide img {
-   width: 100%;
-   height: auto;
-   margin: 0 auto;
-   object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
   }
 }
 
@@ -441,10 +441,10 @@ footer{
   }
   
   .swiper-slide img {
-   width: 100%;
-   height: auto;
-   margin: 0 auto;
-   object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
     
   }
    #desc {
