@@ -213,64 +213,6 @@ a:hover {
   object-fit: cover;
 }
 
-.clr {
-  color: #84B4F7;
-  font-weight: bold;
-}
-.modal {
- position: fixed;
- font-size: 1.5em;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- background-color: rgba(0,0,0,0.5);
- opacity: 0;
- visibility: hidden;
- z-index: 5;
- transform: scale(1.1);
- transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-}
-
-.modal:target {
- opacity: 1;
- visibility: visible;
- transform: scale(1.0);
- transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
-
-.modal-content {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- background-color: #fff;
- padding: 1em 1.5em;
- width: 80em;
- height: auto;
- border-radius: 0.4em;
- overflow-y: auto;
- max-height: 80vh; 
-}
-
-.close-modal {
-    color: #aaa;
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
-    padding-top: 0.5em;
-    background: #fff;
-    font-size: 1.5em;
-    width: 3em;
-    height: 3em;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    &:hover {
-      color: #333; 
-    }
-}
-
 .horizontal-nav {
     display: flex;
     justify-content: center;
@@ -482,15 +424,11 @@ footer{
     flex-wrap: wrap;
     margin-top:10em;
   }
-  .modal-content {
-    width: 20em;
-}
+  
 /*   #m_c_h{
     font-size: 1.2em;
 } */
-  .close-modal {
-    font-size: 1em;
-}
+  
   .btn-toggle{
     margin-top: -45px;
     z-index: 0;
