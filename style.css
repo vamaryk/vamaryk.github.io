@@ -417,7 +417,7 @@ footer{
     }
 }
 
-@media (max-width: 520px) {
+@media (orientation: portrait) and (max-width: 520px) {
      body {
       padding: 2rem;
     }
@@ -472,7 +472,7 @@ footer{
     }
 }
 
-@media (max-width: 440px) {
+@media (orientation: portrait) and (max-width: 440px) {
   .lnk {
     font-size: 1.1em;
     margin-right: 1em;
