@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
 
-
 html {
   font-size: 60%;
 }
@@ -22,7 +21,7 @@ body.dark-theme a {
 }
 
 body.dark-theme a:hover {
-  color: #FF5733; /* Изменение цвета при наведении */
+  color: #FF5733;
 }
 
 .btn-toggle{
@@ -66,7 +65,7 @@ a {
 }
 
 a:hover {
-  color: #FF5733; /* Изменение цвета при наведении */
+  color: #FF5733;
 }
 
 .progress-bar { 
@@ -85,7 +84,7 @@ a:hover {
 }
 
 .footer_ {
-  margin-top: 4em;
+  margin-top: 5em;
   font-size: 14px;
   width: 100%;
   font-family: system-ui, sans-serif;
@@ -218,11 +217,11 @@ a:hover {
 }
 
 .horizontal-nav li {
-  margin: 0 40px; /* Отступы между элементами */
+  margin: 0 40px;
 }
 
 .horizontal-nav li:nth-child(n) {
-  white-space: nowrap; /* Запрет переноса текста на новую строку */
+  white-space: nowrap;
 }
 
 .card__img_car {
@@ -240,10 +239,10 @@ a:hover {
   grid-gap: 6em;
   grid-template-columns: 1fr 2fr;
   align-items: start;
-  justify-content: stretch; /*Выравнивание элементов вдоль основной оси грида  */
+  justify-content: stretch;
   position: relative;
   max-width: 100%;
-  align-items: stretch; /* Растягиваем дочерние элементы по высоте */
+  align-items: stretch;
 }
 
 .card__img_n {
@@ -274,7 +273,6 @@ a:hover {
   width: 8%; 
   margin: 0  auto; 
   margin-top: 8px;
-   
 }
 
 .images img {
@@ -370,7 +368,7 @@ footer{
 
 @media (max-width: 800px) {
     .grid {
-      grid-gap: 2em; /* уменьшение расстояния между элементами */
+      grid-gap: 2em;
     }
     
     .grid__item:hover {
@@ -424,22 +422,18 @@ footer{
     }
 }
 
-@media (orientation: portrait) and (max-width: 520px) {
+@media (max-width: 520px) {
      body {
       padding: 2rem;
     }
     
     .grid_n {
       display: flex;
-      grid-template-columns: 1fr; /* изменение количества колонок на мобильных устройствах */
+      grid-template-columns: 1fr;
       grid-gap: 2em;
       flex-wrap: wrap;
       margin-top:10em;
     }
-    
-  /*   #m_c_h{
-        font-size: 1.2em;
-      } */
     
     .btn-toggle{
       margin-top: -45px;
@@ -461,7 +455,6 @@ footer{
       height: auto;
       margin: 0 auto;
       object-fit: cover;
-      
     }
     
      #desc {
@@ -475,19 +468,16 @@ footer{
     }
   
     th, td {
-      padding: 6px; /* уменьшение отступов в ячейках таблицы */
+      padding: 6px;
     }
 }
 
-@media (orientation: portrait) and (max-width: 440px) {
+@media (max-width: 440px) {
   .lnk {
     font-size: 1.1em;
     margin-right: 1em;
     margin-left: -2em;
   }
-/*   .card__content {
-    margin-bottom: -2.5em;
-  } */
   
   .card__img_n  {
     margin-bottom: -50%;
@@ -501,8 +491,4 @@ footer{
   table {
     display: none;
   }
-}
-
-footer {
-  margin-top: 6em;
 }
