@@ -326,6 +326,7 @@ body {
     filter: grayscale(100%); 
     transition: 0.5s ease; 
     cursor: pointer;
+    border-radius: 0.2em;
   }
   
   .wrapper img:hover {
@@ -352,7 +353,7 @@ body {
     display: block;
     width: 7em;
     padding: .6em;
-    color: var(--font-color-secondary);;
+    color: var(--font-color-secondary);
     font-size: .9em;
     text-align: center;
     border: 2px solid transparent;
@@ -465,68 +466,167 @@ body {
   }
 }
 
-#anim {
-  text-align: center;
-  margin-left: -35px;
- }
- 
- #anim ul {
-  text-align: center;
-  list-style: none;
- }
- 
- #anim ul li {
-  width: 10px;
-  height: 10px;
-  border-radius: 20%;
-  background-color: red;
-  display: inline-block;
-  margin: 5px;
-  transform: translateY(-10px);
-  animation: bounce-balls 1.2s cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate;
- }
- 
- #anim ul li:nth-child(1) {
-  background: orange;
-  animation-delay: .6s;
- }
- 
- #anim ul li:nth-child(2) {
-  background: coral;
-  animation-delay: .7s;
- }
- 
- #anim ul li:nth-child(3) {
-  background: darksalmon;
-  animation-delay: .8s;
- }
- 
- #anim ul li:nth-child(4) {
-  background: indianred;
-  animation-delay: .6s;
- }
- 
- #anim ul li:nth-child(5) {
-  background: lightcoral;
-  animation-delay: .6s;
- }
- 
- #anim ul li:nth-child(6) {
-  background: lightcoral;
-  animation-delay: .7s;
- }
- 
- @keyframes bounce-balls {
-   30% {
-     transform: translateY(-10px);
+
+.container_2 {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  margin-top: -2.5em;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 4rem 2rem;
+}
+
+.about__image img {
+  display: block;
+  max-width: 70%;
+  height: auto;
+}
+
+.section__title-1 {
+  position: relative;
+  width: max-content;
+  margin: 0.75em auto 2em;
+}
+
+.section__title-1 span {
+  position: relative;
+}
+
+.about__perfil {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: .1em;
+  font-weight: 200;
+  position: relative;
+  justify-self: center;
+  margin-block: 2.5rem 4.5rem;
+}
+
+.about__image {
+  width: 220px;
+}
+
+.about__img {
+  position: relative;
+  z-index: 1;
+  border-radius: 0.2em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+
+.about__shadow {
+  width: 250px;
+  height: 180px;
+/*   background-color: var(--body-color); */
+  position: absolute;
+  border-radius: 0.2em;
+  top: -5.2em;
+  right: -5.5em;
+/*   border-bottom: 4px solid #4E6F5D; */
+}
+
+.about__info {
+  padding-left: 1.25rem;
+}
+
+.about__description {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.about__description::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  position: absolute;
+  left: -1.75rem;
+  top: 0.5rem;
+}
+
+.about__list {
+  list-style: square;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 340px) {
+  .container_2 {
+    margin-inline: 1rem;
   }
-   60% {
-     transform: translateY(15px);
+  .about__image {
+    width: 180px;
   }
-   80% {
-     transform: translateY(19px);
+  .about__shadow {
+    height: 230px;
+    right: -2.5rem;
   }
-   100% {
-     transform: translateY(21px);
+}
+
+@media screen and (min-width: 576px) {
+  .about__container{
+    grid-template-columns: 350px;
+    justify-content: center;
   }
- }
+}
+
+@media (max-width: 576px) {
+  .grid {
+     margin-top: -9.5em;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .container_2 {
+    margin-inline: auto;
+  }
+   .about__container {
+    grid-template-columns: 460px 525px;
+    gap: 1rem 9rem;
+    align-items: center;
+    padding-block: 1rem;
+  }
+  .about__perfil {
+    order: -1;
+    grid-row: 1 / 3;
+  }
+  .about__image {
+    width: 350px;
+  }
+  .about__shadow {
+    width: 22em;
+    top: -8rem;
+    right: -8rem;
+  }
+  .about__perfil {
+    right: -4rem;
+    top: 4.5rem;
+  }
+  .about__line {
+    width: 80px;
+    right: -2rem;
+    top: 10rem;
+  }
+  .about__container .section__title-1 {
+    align-self: flex-end;
+    margin-inline: 0;
+  }
+  .about__info {
+    align-self: flex-start;
+    padding-left: 3rem;
+  }
+  .about__description {
+    margin-bottom: 2rem;
+  }
+  .about__description::after {
+    width: 32px;
+    height: 2px;
+    left: -3rem;
+    top: 14px;
+  }
+  .about__list {
+    margin-bottom: 5rem;
+  }
+}
