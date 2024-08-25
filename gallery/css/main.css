@@ -296,6 +296,10 @@ body {
       font-size: calc(var(--index)*1.5);
       font-size: 1em;
     }
+
+    header {
+      position: absolute;
+    }
   }
   
   .container {
