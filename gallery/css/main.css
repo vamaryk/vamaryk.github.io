@@ -293,7 +293,8 @@ body {
     }
 
     header, footer {
-      font-size: calc(var(--index)*1);
+      font-size: calc(var(--index)*1.5);
+      font-size: 1em;
     }
   }
   
