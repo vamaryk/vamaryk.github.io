@@ -491,7 +491,7 @@ body {
 .section__title-1 {
   position: relative;
   width: max-content;
-  margin: 0.75em auto 2em;
+  margin: 0.75em auto 1em;
 }
 
 .section__title-1 span {
@@ -504,7 +504,7 @@ body {
   font-weight: 200;
   position: relative;
   justify-self: center;
-  margin-block: 2.5rem 4.5rem;
+  margin-block: 1.5rem 4.5rem;
 }
 
 .about__image {
