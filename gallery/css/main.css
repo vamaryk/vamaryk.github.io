@@ -491,7 +491,7 @@ body {
 .section__title-1 {
   position: relative;
   width: max-content;
-  margin: 0.75em auto 1em;
+  margin: 0 auto 0;
 }
 
 .section__title-1 span {
