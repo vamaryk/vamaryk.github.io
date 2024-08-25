@@ -448,6 +448,10 @@ body {
   .header span {
     margin-top: -70em;
 }
+
+  .header {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 480px) {
