@@ -459,7 +459,7 @@ body {
 }
 
 .section {
-  padding-block: 4rem 2rem;
+  padding-block: 0 2rem;
 }
 
 .about__image img {
@@ -560,6 +560,10 @@ body {
   .about__description {
     margin-top: -2em;
   }
+    
+  .section {
+    padding-block: 4rem 2rem;
+  }
 }
 
 @media screen and (min-width: 1150px) {
@@ -567,9 +571,6 @@ body {
     margin-inline: auto;
   }
 
-  .section {
-    padding-block: 0 2rem;
-  }
    .about__container {
     grid-template-columns: 460px 525px;
     gap: 1rem 9rem;
