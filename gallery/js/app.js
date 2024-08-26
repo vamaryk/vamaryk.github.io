@@ -3,9 +3,7 @@ window.onload = function() {
 
         document.body.classList.add('loaded')
 
-        Draggable.create('.slider', {
-            bounds: 'body',
-        })
+        
 
     }, 200)
 }
