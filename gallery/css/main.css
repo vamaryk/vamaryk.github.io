@@ -95,6 +95,13 @@ body {
     color: #FF5733;
   }
   
+  p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: .1em;
+    font-weight: 200;
+    font-size: 1.2em;
+  }
+  
   .slider__items {
     counter-reset: slide;
     height: 100%;
@@ -433,6 +440,10 @@ body {
 
   nav ul {
     gap: var(--gap);
+  }
+    
+  p {
+    font-size: 1em;
   }
 }
 
