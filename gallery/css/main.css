@@ -308,7 +308,7 @@ body {
     }
 
     body {
-      color: #1a1a1a;
+      color: #120101;
   }
   }
   
@@ -415,10 +415,6 @@ body {
    width: 1em;
    margin: 0 0.625em;
  }
-
-  .text-block h1 {
-      font-size: 3.8em;
-    }
 }
 
 @media (max-width: 768px) {
@@ -453,6 +449,11 @@ body {
     
   .about__info p {
     font-size: 1.2em;
+  }
+
+  
+  .text-block h1 {
+    font-size: 3.8em;
   }
 }
 
