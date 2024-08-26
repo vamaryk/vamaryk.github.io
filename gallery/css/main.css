@@ -566,6 +566,10 @@ body {
   .container_2 {
     margin-inline: auto;
   }
+
+  .section {
+    padding-block: 0 2rem;
+  }
    .about__container {
     grid-template-columns: 460px 525px;
     gap: 1rem 9rem;
