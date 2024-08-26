@@ -228,12 +228,6 @@ body {
     object-fit: cover;
   }
 
-  .gallery-page {
-    /* margin-top: 4em; */
-    height: 100vh;
-    /* overflow: hidden; */
-  }
-  
   .text-block {
     position: absolute;
     top: 0;
