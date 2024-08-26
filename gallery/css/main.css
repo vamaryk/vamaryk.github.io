@@ -10,7 +10,7 @@
     --color: #2C2C2C;
     --bg-color: #fff;
     --bg-color-header: #fcfcfc;
-    --font-color-secondary: rgb(32, 32, 32);
+    --font-color-secondary: rgb(51, 51, 51);
     --button-color: #fff;
 }
 
@@ -281,7 +281,7 @@ body {
   
   @media (max-width: 520px) {
     .text-block h1 {
-      font-size: 3.9em;
+      font-size: 4em;
   /*      font-family: "Dela Gothic One", sans-serif; */
   /*      font-family: "Rubik Mono One", monospace; */
   /*      font-family: "Russo One", sans-serif; */
@@ -411,6 +411,10 @@ body {
    width: 1em;
    margin: 0 0.625em;
  }
+
+  .text-block h1 {
+      font-size: 3.7em;
+    }
 }
 
 @media (max-width: 768px) {
