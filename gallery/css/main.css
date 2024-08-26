@@ -306,6 +306,9 @@ body {
     header {
       position: absolute;
     }
+
+    body {
+      color: #202020;
   }
   
   .header {
