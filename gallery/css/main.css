@@ -293,8 +293,7 @@ body {
     }
 
     header, footer {
-      font-size: calc(var(--index)*1.5);
-      font-size: 1em;
+      font-size: calc(var(--index)*1);
     }
 
     header {
@@ -302,6 +301,24 @@ body {
     }
   }
   
+  .header {
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: .1em;
+    font-weight: 200;
+    font-size: calc(var(--index) * 2.8);
+    position: absolute;
+    text-align: center;
+    opacity: .9;
+    margin-top: 4em;
+}
+
+.header span {
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-size: calc(var(--index) * 0.9);
+    margin-top: -20em;}
+
   .container {
     display: flex;
     flex-direction: column;
@@ -373,54 +390,6 @@ body {
     margin-left: 1.5em;
   }
 
-.header {
-    text-transform: uppercase;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    letter-spacing: .1em;
-    font-weight: 200;
-    font-size: calc(var(--index) * 2.8);
-    position: absolute;
-    text-align: center;
-    opacity: .9;
-    margin-top: 4em;
-    margin-left: 1.5em;
-}
-
-.header span {
-    display: block;
-    font-family: Helvetica, sans-serif;
-    font-size: calc(var(--index) * 0.9);
-    margin-top: -20em;
-}
-
-.gallery {
-    width: 30vw;
-    column-width: 2em;
-    gap: var(--gap);
-    transform: scale(8.4);
-    transition: transform 1s cubic-bezier(.075, 1, .25, 1), opacity 1s;
-}
-
-.gallery_item {
-    margin-bottom: var(--gap);
-    transform: scale(1.001);
-    will-change: transform;
-    transition: .3s;
-}
-
-.gallery_item:hover {
-    transform: scale(1.03);
-}
-
-.gallery_item img {
-    width: 100%;
-    display: block;
-}
-
-.loaded .gallery {
-    opacity: 1;
-}
-
 .loaded #home-page {
     opacity: 1;
 }
@@ -446,13 +415,13 @@ body {
     margin: 0;
   }
 
-  .header span {
-    margin-top: -70em;
-}
-
   .header {
     margin-left: 0;
   }
+
+  .header span {
+    margin-top: -70em;
+}
 }
 
 @media (max-width: 480px) {
@@ -465,7 +434,6 @@ body {
     gap: var(--gap);
   }
 }
-
 
 .container_2 {
   max-width: 1120px;
@@ -491,7 +459,7 @@ body {
 .section__title-1 {
   position: relative;
   width: max-content;
-  margin: 0 auto 0;
+  margin: 0.75em auto 2em;
 }
 
 .section__title-1 span {
@@ -504,7 +472,7 @@ body {
   font-weight: 200;
   position: relative;
   justify-self: center;
-  margin-block: 1.5rem 4.5rem;
+  margin-block: 2.5rem 4.5rem;
 }
 
 .about__image {
