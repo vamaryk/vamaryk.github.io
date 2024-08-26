@@ -300,7 +300,7 @@ body {
     }
 
     header, footer {
-      font-size: calc(var(--index)*1);
+      font-size: calc(var(--index)*1.2);
     }
 
     header {
@@ -308,7 +308,8 @@ body {
     }
 
     body {
-      color: #202020;
+      color: #1a1a1a;
+  }
   }
   
   .header {
@@ -416,7 +417,7 @@ body {
  }
 
   .text-block h1 {
-      font-size: 3.7em;
+      font-size: 3.8em;
     }
 }
 
