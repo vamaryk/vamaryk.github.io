@@ -95,7 +95,7 @@ body {
     color: #FF5733;
   }
   
-  p {
+  .about__info p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: .1em;
     font-weight: 200;
@@ -442,7 +442,7 @@ body {
     gap: var(--gap);
   }
     
-  p {
+  .about__info p {
     font-size: 1em;
   }
 }
