@@ -453,7 +453,7 @@ body {
 
 @media (max-width: 420px) {
   .horizontal img {
-   width: 1em;
+/*    width: 1em; */
    margin: 0 0.625em;
  }
 
