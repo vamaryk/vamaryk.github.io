@@ -228,6 +228,12 @@ body {
     object-fit: cover;
   }
 
+  .gallery-page {
+    /* margin-top: 4em; */
+    height: 100vh;
+    /* overflow: hidden; */
+  }
+  
   .text-block {
     position: absolute;
     top: 0;
@@ -311,7 +317,8 @@ body {
     display: block;
     font-family: Helvetica, sans-serif;
     font-size: calc(var(--index) * 0.9);
-    margin-top: -20em;}
+    margin-top: -20em;
+  }
 
   .container {
     display: flex;
@@ -453,7 +460,7 @@ body {
 .section__title-1 {
   position: relative;
   width: max-content;
-  margin: 0.75em auto 2em;
+  margin: 0 auto 0;
 }
 
 .section__title-1 span {
@@ -466,7 +473,7 @@ body {
   font-weight: 200;
   position: relative;
   justify-self: center;
-  margin-block: 2.5rem 4.5rem;
+  margin-block: 1.5rem 4.5rem;
 }
 
 .about__image {
