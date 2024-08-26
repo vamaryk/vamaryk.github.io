@@ -90,7 +90,7 @@ body {
   
   @media (max-width: 520px) {
     header {
-      font-size: calc(var(--index)*1);
+      font-size: calc(var(--index)*1.2);
       position: absolute;
     }
   }
