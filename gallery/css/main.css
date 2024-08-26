@@ -415,6 +415,10 @@ body {
    width: 1em;
    margin: 0 0.625em;
  }
+
+  .text-block h1 {
+    font-size: 3.6em;
+  }
 }
 
 @media (max-width: 768px) {
