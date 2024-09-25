@@ -493,6 +493,6 @@ footer{
   }
 }
 
-.card__content a {
+.grid__item a {
   text-decoration: none;
 }
