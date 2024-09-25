@@ -170,7 +170,7 @@ a:hover {
   margin-bottom: 2.5rem;
 }
 
-.card__btn {
+/* .card__btn {
   display: block;
   width: 100%;
   padding: 1.5rem;
@@ -182,6 +182,27 @@ a:hover {
   border-radius: 0.4rem;
   transition: 0.2s;
   cursor: pointer;
+} */
+
+.grid__item {
+  position: relative;
+}
+
+.card__btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  color: #11111;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #FFF5F1;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .card__btn span {
