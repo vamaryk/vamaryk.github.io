@@ -492,3 +492,7 @@ footer{
     display: none;
   }
 }
+
+.card__content a {
+  text-decoration: none;
+}
