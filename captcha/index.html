@@ -1,6 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru" >
   <head>
-    <title>reCAPTCHA demo: Explicit render after an onload callback</title>
+    <title>Form Validation + reCAPTCHA demo</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
     <script type="text/javascript">
       var onloadCallback = function() {
         grecaptcha.render('html_element', {
@@ -10,10 +13,89 @@
     </script>
   </head>
   <body>
+    <div class="container" id="main-page">
+      <div class="header">
+        <img src="https://life.akbars.ru/upload/iblock/a88/5lfuosjm90zdaoj37h9qux31ljz5wvhi.png" alt="Фотография 1" class= "image">
+        <h2>ФОРМА РЕГИСТРАЦИИ</h2>
+      </div>
+
+      <form class="form" id="form">
+        <div class="form-group">
+          <label for="">Имя пользователя</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Введите имя пользователя"
+            autocomplete="off"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error Msg</small>
+        </div>
+
+        <div class="form-group">
+          <label for="">Адрес электронной почты</label>
+          <input type="email" id="email" placeholder="Введите адрес электронной почты" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error Msg</small>
+        </div>
+
+        <!-- <div class="form-group">
+				<label for="">Phone Number</label>
+				<input type="number" id="phone" placeholder="Enter phone number">
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error Msg</small>
+			</div> -->
+
+        <div class="form-group">
+          <div class="pd">
+          <label for="">Пароль</label>
+          <button id="toggle-password" class="fa fa-eye" type="button" style="color: #ccc; background: none; border: none; padding: 0; cursor: pointer;"></button>
+          </div>
+          <input
+            type="password"
+            id="password"
+            placeholder="Введите пароль"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error Msg</small>
+        </div>
+
+        <div class="form-group">
+          <div class="pd">
+          <label for="">Введите пароль еще раз</label>
+          <button id="toggle-retypepass" class="fa fa-eye" type="button" style="color: #ccc; background: none; border: none; padding: 0; cursor: pointer;"></button>
+          </div>
+          <input
+            type="password"
+            id="retypepass"
+            placeholder="Введите пароль еще раз"
+          />
+          
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error Msg</small>
+        </div>
+
+        <input id="submit-btn" type="submit" value="Отправить" class="btn" />
+      </form>
+    </div>
+
+    <!-- message after submitted -->
+    <div class="container" id="submitted-msg">
+      <div class="submit-msg-inner">
+        <h1>Спасибо, <span id="msg-name"></span>, за регистрацию.</h1>
+        <button onclick="previewForm()" class="preview-btn">
+          Форма предварительного просмотра
+        </button>
+      </div>
+    </div>
     <form action="?" method="POST">
       <div id="html_element"></div>
       <br>
-      <input type="submit" value="Submit">
     </form>
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
         async defer>
