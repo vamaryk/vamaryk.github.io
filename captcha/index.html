@@ -31,7 +31,7 @@
 
       <form class="form" id="form">
         <div class="form-group">
-          <label for="">Имя пользователя</label>
+          <label for="" id="USERNAME">Имя пользователя</label>
           <input
             type="text"
             id="username"
@@ -44,7 +44,7 @@
         </div>
 
         <div class="form-group">
-          <label for="">Адрес электронной почты</label>
+          <label for="" id="EMAIL">Адрес электронной почты</label>
           <input type="email" id="email" placeholder="Введите адрес электронной почты" />
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
@@ -61,7 +61,7 @@
 
         <div class="form-group">
           <div class="pd">
-          <label for="">Пароль</label>
+          <label for="" id="PASSWORD">Пароль</label>
           <button id="toggle-password" class="fa fa-eye" type="button" style="color: #ccc; background: none; border: none; padding: 0; cursor: pointer;"></button>
           </div>
           <input
@@ -76,7 +76,7 @@
 
         <div class="form-group">
           <div class="pd">
-          <label for="">Введите пароль еще раз</label>
+          <label for="" id="RETYPE_PASSWORD">Введите пароль еще раз</label>
           <button id="toggle-retypepass" class="fa fa-eye" type="button" style="color: #ccc; background: none; border: none; padding: 0; cursor: pointer;"></button>
           </div>
           <input
@@ -99,7 +99,7 @@
     <!-- message after submitted -->
     <div class="container" id="submitted-msg">
       <div class="submit-msg-inner">
-        <h1>Спасибо, <span id="msg-name"></span>, за регистрацию.</h1>
+        <h1><span id="msg-name"></span></h1>
         <button onclick="previewForm()" class="preview-btn">
           Форма предварительного просмотра
         </button>
