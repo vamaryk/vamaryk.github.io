@@ -319,3 +319,29 @@ body {
   top: 0;
   right: 0;
 }
+
+#language-switcher {
+  position: absolute;
+  right: 1em;
+  top: 4em;
+  display: inline-block;
+  padding: .4em 1.4em;
+  border: none;
+  border-radius: 5px;
+  background-color: #659C49;
+  color: #fff;
+  font-size: 16px;
+  transition: all 1s ease;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#language-switcher:hover {
+  background-color: #4BA2A9;
+}
+
+#language-switcher option {
+  background-color: #fff;
+  color: #2F4F4F;
+  border: none;
+}
