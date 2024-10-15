@@ -1,3 +1,78 @@
+const languages = {
+  "ru": {
+    "FORM_REGISTRATION": "ФОРМА РЕГИСТРАЦИИ",
+    "USERNAME": "Имя пользователя",
+    "EMAIL": "Адрес электронной почты",
+    "PASSWORD": "Пароль",
+    "RETYPE_PASSWORD": "Введите пароль еще раз",
+    "SUBMIT_BTN": "Отправить",
+    "SUBMITTED_MSG": (name) => `Спасибо, ${name}, за регистрацию.`,
+    "PREVIEW_BTN": "Форма предварительного просмотра",
+    "ERROR_USERNAME_EMPTY": "Имя пользователя не может быть пустым",
+    "ERROR_USERNAME_SHORT": "Введите минимум 3 символа",
+    "ERROR_EMAIL_EMPTY": "Email не может быть пустым",
+    "ERROR_EMAIL_INVALID": "Некорректный email",
+    "ERROR_PASSWORD_EMPTY": "Пароль не может быть пустым",
+    "ERROR_PASSWORD_SHORT": "Введите минимум 8 символов",
+    "ERROR_PASSWORD_DIGITS_ONLY": "Пароль должен содержать другие символы (помимо цифр)",
+    "ERROR_PASSWORD_COMMON": "Придумайте другой пароль",
+    "ERROR_CPASSWORD_MISMATCH": "Пароль не совпал",
+    "PLACEHOLDER_USERNAME": "Введите имя пользователя",
+    "PLACEHOLDER_EMAIL": "Введите адрес электронной почты",
+    "PLACEHOLDER_PASSWORD": "Введите пароль",
+    "PLACEHOLDER_RETYPE_PASSWORD": "Введите пароль еще раз"
+  },
+  "en": {
+    "FORM_REGISTRATION": "REGISTRATION FORM",
+    "USERNAME": "Username",
+    "EMAIL": "Email address",
+    "PASSWORD": "Password",
+    "RETYPE_PASSWORD": "Retype password",
+    "SUBMIT_BTN": "Submit",
+    "SUBMITTED_MSG": "Thank you for registering.",
+    "PREVIEW_BTN": "Preview form",
+    "ERROR_USERNAME_EMPTY": "Username cannot be empty",
+    "ERROR_USERNAME_SHORT": "Enter at least 3 characters",
+    "ERROR_EMAIL_EMPTY": "Email cannot be empty",
+    "ERROR_EMAIL_INVALID": "Not a valid email",
+    "ERROR_PASSWORD_EMPTY": "Password cannot be empty",
+    "ERROR_PASSWORD_SHORT": "Enter at least 8 characters",
+    "ERROR_PASSWORD_DIGITS_ONLY": "Password must contain other characters (besides digits)",
+    "ERROR_PASSWORD_COMMON": "Choose another password",
+    "ERROR_CPASSWORD_MISMATCH": "Passwords do not match",
+    "PLACEHOLDER_USERNAME": "Enter username",
+    "PLACEHOLDER_EMAIL": "Enter email address",
+    "PLACEHOLDER_PASSWORD": "Enter password",
+    "PLACEHOLDER_RETYPE_PASSWORD": "Retype password"
+  }
+};
+
+let currentLang = "ru";
+
+function updateLanguage(lang) {
+  currentLang = lang;
+  const langObj = languages[lang];
+  document.querySelector("#main-page h2").textContent = langObj.FORM_REGISTRATION;
+  document.querySelectorAll(".form-group label").forEach((label) => {
+    label.textContent = langObj[label.getAttribute("for")];
+  });
+  document.querySelector("#submit-btn").value = langObj.SUBMIT_BTN;
+  document.querySelector("#submitted-msg h1").textContent = langObj.SUBMITTED_MSG;
+  document.querySelector(".preview-btn").textContent = langObj.PREVIEW_BTN;
+  document.querySelector("#USERNAME").textContent = langObj.USERNAME;
+  document.querySelector("#EMAIL").textContent = langObj.EMAIL;
+  document.querySelector("#PASSWORD").textContent = langObj.PASSWORD;
+  document.querySelector("#RETYPE_PASSWORD").textContent = langObj.RETYPE_PASSWORD;
+  document.querySelector("#username").placeholder = langObj.PLACEHOLDER_USERNAME;
+  document.querySelector("#email").placeholder = langObj.PLACEHOLDER_EMAIL;
+  document.querySelector("#password").placeholder = langObj.PLACEHOLDER_PASSWORD;
+  document.querySelector("#retypepass").placeholder = langObj.PLACEHOLDER_RETYPE_PASSWORD;
+}
+
+document.querySelector("#language-switcher").addEventListener("change", (e) => {
+  updateLanguage(e.target.value);
+});
+
 const form = document.getElementById("form");
 const userName = document.getElementById("username");
 const email = document.getElementById("email");
@@ -35,18 +110,18 @@ const validate = () => {
 
   // validate userName
   if (userNameVal === "") {
-    setErrorMsg(username, "Имя пользователя не может быть пустым");
+    setErrorMsg(username, languages[currentLang].ERROR_USERNAME_EMPTY);
   } else if (userNameVal.length <= 2) {
-    setErrorMsg(username, "Введите минимум 3 символа");
+    setErrorMsg(username, languages[currentLang].ERROR_USERNAME_SHORT);
   } else {
     setSuccessmsg(username);
   }
 
   // validate email
   if (emailVal === "") {
-    setErrorMsg(email, "Email не может быть пустым");
+    setErrorMsg(email, languages[currentLang].ERROR_EMAIL_EMPTY);
   } else if (!isEmail(emailVal)) {
-    setErrorMsg(email, "Not valid email");
+    setErrorMsg(email, languages[currentLang].ERROR_EMAIL_INVALID);
   } else {
     setSuccessmsg(email);
   }
@@ -66,32 +141,32 @@ const validate = () => {
   
   //validate password
   if (passwordVal === "") {
-    setErrorMsg(password, "Пароль не может быть пустым");
+    setErrorMsg(password, languages[currentLang].ERROR_PASSWORD_EMPTY);
   } else if (passwordVal.length < 8) {
-    setErrorMsg(password, "Введите минимум 8 символов");
+    setErrorMsg(password, languages[currentLang].ERROR_PASSWORD_SHORT);
   } 
     else if (hasD.test(passwordVal) == true) {
-    setErrorMsg(password, "Пароль должен содержать другие символы (помимо цифр) ");
+    setErrorMsg(password, languages[currentLang].ERROR_PASSWORD_DIGITS_ONLY);
   }
     else if (D_.test(passwordVal) == true || l_.test(passwordVal) == true) {
-    setErrorMsg(password, "Придумайте другой пароль");
+    setErrorMsg(password, languages[currentLang].ERROR_PASSWORD_COMMON);
   } else {
     setSuccessmsg(password);
   }
 
   //validate confirm password
   if (cpasswordVal === "") {
-    setErrorMsg(cpassword, "Поле не может быть пустым");
+    setErrorMsg(cpassword, languages[currentLang].ERROR_PASSWORD_EMPTY);
   } else if (cpasswordVal.length < 8) {
-    setErrorMsg(cpassword, "Введите минимум 8 символов");
+    setErrorMsg(cpassword, languages[currentLang].ERROR_PASSWORD_SHORT);
   } else if (cpasswordVal != passwordVal) {
-    setErrorMsg(cpassword, "Пароль не совпал ");
+    setErrorMsg(cpassword, languages[currentLang].ERROR_CPASSWORD_MISMATCH);
   } 
     else if (hasD.test(cpasswordVal) == true) {
-    setErrorMsg(cpassword, "Пароль должен содержать другие символы (помимо цифр) ");
+    setErrorMsg(cpassword, languages[currentLang].ERROR_PASSWORD_DIGITS_ONLY);
   }
     else if (D_.test(cpasswordVal) == true || l_.test(cpasswordVal) == true) {
-    setErrorMsg(cpassword, "Придумайте другой пароль");
+    setErrorMsg(cpassword, languages[currentLang].ERROR_PASSWORD_COMMON);
   }
     else {
     setSuccessmsg(cpassword);
@@ -111,7 +186,7 @@ function showSubmittedMsg() {
   let successMsgPage = document.getElementById("submitted-msg");
   successMsgPage.style.display = "block";
 
-  document.getElementById("msg-name").innerText = userName.value;
+  document.getElementById("msg-name").innerText = languages[currentLang].SUBMITTED_MSG(userName.value).replace("${name}", userName.value);
 }
 
 function setErrorMsg(input, errormsg) {
