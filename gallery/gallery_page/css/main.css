@@ -146,6 +146,14 @@ body {
     opacity: 0;
 }
 
+.header {
+  transition: filter 0.3s ease; /* Плавный переход для размытия */
+}
+
+.header.blurred {
+  filter: blur(5px);
+}
+
 @media (max-width: 768px) {
   .header {
     margin-left: 0;
