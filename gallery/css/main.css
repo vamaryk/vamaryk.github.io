@@ -465,7 +465,7 @@ body {
 .grid {
   display: grid;
   margin-top: -2.5em;
-  gap: 1.5rem;
+  gap: 2em;
 }
 
 .section {
@@ -574,6 +574,10 @@ body {
   .section {
     padding-block: 4rem 2rem;
   }
+
+  .section__title-1 {
+    margin: -1em auto 1em;
+  }
 }
 
 @media screen and (min-width: 1150px) {
@@ -586,6 +590,7 @@ body {
     gap: 1rem 9rem;
     align-items: center;
     padding-block: 1rem;
+    margin-top: -6em;
   }
   .about__perfil {
     order: -1;
